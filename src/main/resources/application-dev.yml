@@ -1,6 +1,6 @@
 # 数据源配置
 datasource:
-  url: jdbc:mysql://172.16.6.109:3306/psxt_dev_fj
-  username: psxt
-  password: psxt
+  url: jdbc:mysql://localhost:3306/test
+  username: root
+  password: root
   driver-class-name: com.mysql.jdbc.Driver
