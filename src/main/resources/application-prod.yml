@@ -1,1 +1,4 @@
 # 生产环境配置
+swagger:
+  api-docs:
+    enable: false

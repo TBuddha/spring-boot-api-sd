@@ -1,4 +1,6 @@
 # ~~~~~~~~~~~~~~~~~~~~~~basic~~~~~~~~~~~~~~~~~~~~~#
+spring.application.name: spring-boot-api-sd
+
 spring:
   profiles:
     active: dev
@@ -15,4 +17,10 @@ spring:
     driver-class-name: ${datasource.driver-class-name}
 
 # ~~~~~~~~~~~~所有环境通用的配置，放在这里~~~~~~~~~~~~~#
+swagger:
+  version: @project.version@
+  api-docs:
+    enable: ${swagger.enable:true}
+    title: api
+    description: api服务列表
 
