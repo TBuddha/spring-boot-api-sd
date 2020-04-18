@@ -15,6 +15,12 @@ import static com.company.project.core.ProjectConstant.*;
 
 /** 代码生成器，根据数据表名称生成对应的Model、Mapper、Service、Controller简化开发。 */
 public class CodeGenerator {
+
+  public static void main(String[] args) {
+    genCode("输入表名");
+    // genCodeByCustomModelName("输入表名","输入自定义Model名称");
+  }
+
   // JDBC配置，请修改为你项目的实际配置
   private static final String JDBC_URL = "jdbc:mysql://localhost:3306/test";
   private static final String JDBC_USERNAME = "root";
@@ -37,11 +43,6 @@ public class CodeGenerator {
 
   private static final String AUTHOR = "zhout"; // @author
   private static final String DATE = new SimpleDateFormat("yyyy/MM/dd").format(new Date()); // @date
-
-  public static void main(String[] args) {
-    genCode("输入表名");
-    // genCodeByCustomModelName("输入表名","输入自定义Model名称");
-  }
 
   /**
    * 通过数据表名称生成代码，Model 名称通过解析数据表名称获得，下划线转大驼峰的形式。 如输入表名称 "t_user_detail" 将生成
