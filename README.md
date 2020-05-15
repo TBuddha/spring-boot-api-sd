@@ -5,6 +5,6 @@
 [查看](https://github.com/TBuddha/spring-boot-api-sd/blob/master/src/test/java/CodeGenerator.java)
 
 ## swagger
-[经典版本](https://github.com/TBuddha/spring-boot-api-sd/tree/swagger2)
+[springfox-swagger2版本](https://github.com/TBuddha/spring-boot-api-sd/tree/swagger2)
 
 [swagger-starter版本](https://github.com/TBuddha/spring-boot-api-sd/tree/swagger-starter)
